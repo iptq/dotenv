@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
   }
   env[nenv] = NULL;
 
-  if (execve(argv[2], &argv[2], env) == -1) {
+  if (execvpe(argv[2], &argv[2], env) == -1) {
     fprintf(stderr, "Failed to exec '%s'\n", argv[2]);
     fprintf(stderr, "Error: %s\n", strerror(errno));
     return 1;
