@@ -3,7 +3,7 @@
 CC=g++
 FLAGS="-std=c++11"
 
-all: main.cc
+all: main.cpp
 	mkdir -p bin
 	$(CC) $(FLAGS) -o bin/dotenv $<
 
